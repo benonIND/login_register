@@ -1,6 +1,6 @@
 const { hashing, compare } = require('../helpers/bcrypt')
 const { createToken, verif } = require('../helpers/jwt')
-const { User } = require('../models')
+const { User, Data } = require('../models')
 class Controller {
     static async Register( req, res ) {
         try {
@@ -31,6 +31,15 @@ class Controller {
                 res.status(400).json({ error: `invalid email/password`})
             }
         } catch( err ) {
+            res.status(400).json( err )
+        }
+    }
+
+    static async getData( req, res ) {
+        try {
+            let get_data = await Data.findAll()
+            res.status(200).json( get_data )
+        }catch( err ) {
             res.status(400).json( err )
         }
     }
