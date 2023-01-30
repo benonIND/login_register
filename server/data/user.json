@@ -1,0 +1,17 @@
+[
+    {
+        "name": "sutar",
+        "umur": 50,
+        "email": "sutar@gmail.com"
+    },
+    {
+        "name": "durat",
+        "umur": 55,
+        "email": "durat@gmail.com"
+    },
+    {
+        "name": "wajim",
+        "umur": 40,
+        "email": "wajim@gmail.com"
+    }
+]
