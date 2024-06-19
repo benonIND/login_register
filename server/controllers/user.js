@@ -14,7 +14,7 @@ class Controller {
             res.status(400).json( err )
         }
     }
-
+// Yopie Rizqi Maulana
     static async Login( req, res ) {
         try {
             let { email, password } = req.body
